@@ -1,3 +1,4 @@
 #!/bin/bash
 
-7z a -tzip flatsome-child.zip $(dirname "$0")/flatsome-child
+work_dir="$( dirname -- "$0"; )"
+7z a -tzip "$work_dir/flatsome-child.zip" "$work_dir/flatsome-child"
